@@ -95,6 +95,8 @@ PRODUCT_COPY_FILES += \
 	device/samsung/kyleve/prop/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	device/samsung/kyleve/prop/lib/libsoc.so:system/lib/libsoc.so \
 	device/samsung/kyleve/prop/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
+	device/samsung/kyleve/prop/lib/libril.so:system/lib/libril.so \
+	device/samsung/kyleve/prop/lib/libnetutils.so:system/lib/libnetutils.so \
 	device/samsung/kyleve/prop/lib/librpc.so:system/lib/librpc.so \
 	device/samsung/kyleve/prop/lib/libusb_config.so:system/lib/libusb_config.so \
 	device/samsung/kyleve/prop/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
@@ -128,6 +130,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.zygote.disable_gl_preload=true \
 	rild.libpath=/system/lib/libbrcm_ril.so \
 	
+PRODUCT_PACKAGES += \
+        e2fsck \
+        libexifa \
+        libjpega \
+        libkeyutils \
+        audio.a2dp.default \
+        libasound \
+    	libasound_module_pcm_bcmfilter \
+        bcm_dut
+
 # Dalvik heap config
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 

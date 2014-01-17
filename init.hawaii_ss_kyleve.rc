@@ -35,7 +35,7 @@ on early-init
 
 on init
 	#stop running deamon, we will try to launch it on our own
-	stop ril-daemon
+	#stop ril-daemon
 on post-fs-data
 # we will remap this as /storage/sdcard with the sdcard fuse tool
     mkdir /data/media 0770 media_rw media_rw
