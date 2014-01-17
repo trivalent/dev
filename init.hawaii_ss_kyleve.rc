@@ -34,7 +34,8 @@ on early-init
     mkdir /preload 0771 system system 
 
 on init
-
+	#stop running deamon, we will try to launch it on our own
+	stop ril-daemon
 on post-fs-data
 # we will remap this as /storage/sdcard with the sdcard fuse tool
     mkdir /data/media 0770 media_rw media_rw
@@ -43,6 +44,9 @@ on post-fs-data
     # Set indication (checked by vold) that we have finished this action
     setprop vold.post_fs_data_done 1
 
+	# create radio folder for Our RADIO
+	mkdir /data/misc/radio 0775 radio system
+	 
     #for wifi
     mkdir /efs/wifi 0775 radio system
     mkdir /efs/bluetooth 0775 radio system
@@ -448,7 +452,7 @@ service at_distributor /system/bin/at_distributor
 	group radio misc log
 
 # RILD
-service ril-daemon /system/bin/rild
+service kyleve-ril-daemon /system/bin/rild
     class main
     socket rild stream 660 root radio
     socket rild1 stream 660 root radio
