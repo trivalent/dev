@@ -57,7 +57,7 @@ on post-fs-data
     mkdir /system/etc/wifi 0775 wifi wifi
     chown system system /efs/wifi/.mac.info
     chmod 0664 /efs/wifi/.mac.info
-    chown system system /efs/imei/.nvmac.info
+    chown radio system /efs/imei/.nvmac.info
     chmod 0664 /efs/imei/.nvmac.info
 
     # for TRP/TIS
