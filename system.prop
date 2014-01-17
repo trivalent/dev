@@ -1,3 +1,27 @@
 #
 # system.prop for kyleve
 #
+
+#WVGA=240, HVGA=160
+ro.sf.lcd_density=240
+ro.lcd_brightness=160
+
+# MultiTouch support
+ro.product.multi_touch_enabled=true
+ro.product.max_num_touch=2
+
+#adative video encoding
+video.enc.h264.adaptive_quality=1
+video.enc.h264.timing_window_sz=4
+video.enc.h264.timing_thr0=295
+video.enc.h264.timing_thr1=215
+video.enc.h264.timing_thr2=145
+
+#Awesome player lateness in ms
+awesome.lateness=200
+gralloc.use_sync_mode=true
+
+#Enable USB Debugging by Default
+persist.service.adb.enable=1                                                    
+persist.service.debuggable=1
+persist.sys.usb.config=adb
