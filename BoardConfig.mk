@@ -47,6 +47,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Hardware rendering
 USE_OPENGL_RENDERER := true
+BOARD_EGL_CFG := device/samsung/kyleve/config/egl.cfg
 BOARD_USE_MHEAP_SCREENSHOT := true
 BOARD_USE_MHEAP_SCREENSHOT := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true

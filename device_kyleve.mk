@@ -68,9 +68,25 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
 	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
 	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+
+
+# Device GLES libs
+PRODUCT_COPY_FILES += \
+	device/samsung/kyleve/prop/lib/audio.primary.hawaii.so:system/lib/hw/audio.primary.hawaii.so \
+	device/samsung/kyleve/prop/lib/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
+	device/samsung/kyleve/prop/lib/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
+	device/samsung/kyleve/prop/lib/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
+	device/samsung/kyleve/prop/lib/libuip.so:system/lib/libuip.so \
+	device/samsung/kyleve/prop/lib/libVCOS.so:system/lib/libVCOS.so
 	
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=SamsungBCMRIL
+	ro.telephony.ril_class=SamsungBCMRIL \
+	persist.service.adb.enable=1 \
+	persist.service.debuggable=1 \
+	persist.sys.usb.config=adb \
+	mobiledata.interfaces=rmnet0 \
+	ro.zygote.disable_gl_preload=true \
+	rild.libpath=/system/lib/libbrcm_ril.so \
 	
 # Dalvik heap config
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
