@@ -1,11 +1,11 @@
-USE_CAMERA_STUB := true
+USE_CAMERA_STUB := false
 
 # inherit from the proprietary version
 -include vendor/samsung/kyleve/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := hawaii
-TARGET_BOOTLOADER_BOARD_NAME := kyleve
+TARGET_BOOTLOADER_BOARD_NAME := hawaii
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -63,8 +63,12 @@ BRCM_ALSA_LIB_DIR=device/samsung/bcm_common/alsa-lib
 TARGET_RECOVERY_FSTAB := device/samsung/kyleve/recovery.fstab
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
+# Audio
+COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
+
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 
 # Connectivity - Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
@@ -78,10 +82,15 @@ WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/dhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA     := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
 WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/dhd.ko"
-WIFI_DRIVER_MODULE_NAME     := "dhd"
+WIFI_DRIVER_MODULE_NAME     := "wlan0"
 WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/wifi/bcmdhd_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt"
 WIFI_DRIVER_MODULE_AP_ARG   := "firmware_path=/system/etc/wifi/bcmdhd_apsta.bin nvram_path=/system/etc/wifi/nvram_net.txt"
 WIFI_BAND                   := 802_11_ABG
+
+# Wi-Fi Tethering
+BOARD_HAVE_SAMSUNG_WIFI := true
+BOARD_LEGACY_NL80211_STA_EVENTS := true
+BOARD_NO_APSME_ATTR := true
 
 # RIL
 BOARD_RIL_CLASS := device/samsung/kyleve/ril/
