@@ -86,6 +86,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/kyleve/prop/lib/libatlog.so:system/lib/libatlog.so \
 	device/samsung/kyleve/prop/lib/libat_stubs.so:system/lib/libat_stubs.so \
 	device/samsung/kyleve/prop/lib/libatparser.so:system/lib/libatparser.so \
+	device/samsung/kyleve/prop/lib/libbralloc.so:system/lib/libbralloc.so \
 	device/samsung/kyleve/prop/lib/libbrcmcutils.so:system/lib/libbrcmcutils.so \
 	device/samsung/kyleve/prop/lib/libbrcmparser.so:system/lib/libbrcmparser.so \
 	device/samsung/kyleve/prop/lib/libcapi2.so:system/lib/libcapi2.so \
@@ -151,7 +152,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleve/prop/lib/libclcore_neon.bc:system/lib/libclcore_neon.bc \
     device/samsung/kyleve/prop/lib/libcontainers.so:system/lib/libcontainers.so \
     device/samsung/kyleve/prop/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
-    device/samsung/kyleve/prop/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
     device/samsung/kyleve/prop/lib/libremotedesktop_client.so:system/lib/libremotedesktop_client.so \
     device/samsung/kyleve/prop/lib/libremotedesktopservice.so:system/lib/libremotedesktopservice.so \
     device/samsung/kyleve/prop/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
@@ -187,11 +187,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleve/prop/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     device/samsung/kyleve/prop/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so \
     device/samsung/kyleve/prop/lib/libsthmb.so:system/lib/libsthmb.so \
-	device/samsung/kyleve/prop/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
-	device/samsung/kyleve/prop/lib/libbluedroid.so:system/lib/libbluedroid.so \
-	device/samsung/kyleve/prop/lib/libbluetooth.so:system/lib/libbluetooth.so \
-	device/samsung/kyleve/prop/lib/libbluetoothd.so:system/lib/libbluetoothd.so \
-	device/samsung/kyleve/prop/lib/libglib.so:system/lib/libglib.so \
     device/samsung/kyleve/prop/lib/libui.so:system/lib/libui.so \
     device/samsung/kyleve/prop/lib/libuip.so:system/lib/libuip.so \
     device/samsung/kyleve/prop/lib/libuecodec.so:system/lib/libuecodec.so \
@@ -228,8 +223,6 @@ PRODUCT_COPY_FILES += \
 	device/samsung/kyleve/prop/bin/atx:system/bin/atx \
 	device/samsung/kyleve/prop/bin/atxd:system/bin/atxd \
 	device/samsung/kyleve/prop/bin/atrace:system/bin/atrace \
-	device/samsung/kyleve/prop/bin/bcm_dut:system/bin/bcm_dut \
-	device/samsung/kyleve/prop/bin/btld:system/bin/btld \
 	device/samsung/kyleve/prop/bin/glgps:system/bin/glgps \
 	device/samsung/kyleve/prop/bin/gps.cer:system/bin/gps.cer \
 	device/samsung/kyleve/prop/bin/macloader:system/bin/macloader \
@@ -241,12 +234,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleve/prop/bin/cate_rpc_util:system/bin/cate_rpc_util \
     device/samsung/kyleve/prop/bin/gpslogd:system/bin/gpslogd \
     device/samsung/kyleve/prop/bin/immvibed:system/bin/immvibed \
-	device/samsung/kyleve/prop/bin/btld:system/bin/btld \
-	device/samsung/kyleve/prop/bin/bluetoothd:system/bin/bluetoothd \
-	device/samsung/kyleve/prop/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
-    device/samsung/kyleve/prop/bin/LE_dut:system/bin/LE_dut \
-	device/samsung/kyleve/prop/bin/wlandutservice:system/bin/wlandutservice \
-    device/samsung/kyleve/prop/bin/ndc:system/bin/ndc \
+	device/samsung/kyleve/prop/bin/ndc:system/bin/ndc \
     device/samsung/kyleve/prop/bin/vdc:system/bin/vdc \
     
 	
