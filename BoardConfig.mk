@@ -64,7 +64,7 @@ TARGET_RECOVERY_FSTAB := device/samsung/kyleve/recovery.fstab
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
 # Audio
-COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
+#COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
