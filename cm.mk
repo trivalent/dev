@@ -14,5 +14,5 @@ $(call inherit-product, device/samsung/kyleve/device_kyleve.mk)
 PRODUCT_DEVICE := kyleve
 PRODUCT_NAME := cm_kyleve
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := kyleve
+PRODUCT_MODEL := GT-S7392
 PRODUCT_MANUFACTURER := samsung

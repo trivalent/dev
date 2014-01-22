@@ -52,24 +52,38 @@ device/samsung/kyleve/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
-	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
-	frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-	frameworks/native/data/etc/android.hardware.location.xml:system/etc/permissions/android.hardware.location.xml \
-	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
-	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-	frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
-	frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
-	frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
-	frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
-	frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
-	frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
-	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-	frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
-
+device/samsung/kyleve/prop/etc/permissions/access.control.xml:system/etc/permissions/access.control.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.camera.flash.xml:system/etc/permissions/android.hardware.camera.flash.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
+device/samsung/kyleve/prop/etc/permissions/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+device/samsung/kyleve/prop/etc/permissions/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
+device/samsung/kyleve/prop/etc/permissions/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
+device/samsung/kyleve/prop/etc/permissions/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
+device/samsung/kyleve/prop/etc/permissions/com.android.location.provider.xml:system/etc/permissions/com.android.location.provider.xml \
+device/samsung/kyleve/prop/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
+device/samsung/kyleve/prop/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
+device/samsung/kyleve/prop/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
+device/samsung/kyleve/prop/etc/permissions/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
+device/samsung/kyleve/prop/etc/permissions/com.sec.android.app.minimode.xml:system/etc/permissions/com.sec.android.app.minimode.xml \
+device/samsung/kyleve/prop/etc/permissions/com.sec.feature.minimode.xml:system/etc/permissions/com.sec.feature.minimode.xml \
+device/samsung/kyleve/prop/etc/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+device/samsung/kyleve/prop/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
+device/samsung/kyleve/prop/etc/permissions/platform.xml:system/etc/permissions/platform.xml \
+device/samsung/kyleve/prop/etc/permissions/seccamera.xml:system/etc/permissions/seccamera.xml \
+device/samsung/kyleve/prop/etc/permissions/sec_edm.xml:system/etc/permissions/sec_edm.xml \
+device/samsung/kyleve/prop/etc/permissions/sec_feature.xml:system/etc/permissions/sec_feature.xml \
+device/samsung/kyleve/prop/etc/permissions/sec_hardware_library.xml:system/etc/permissions/sec_hardware_library.xml \
+device/samsung/kyleve/prop/etc/permissions/sec_mdm.xml:system/etc/permissions/sec_mdm.xml \
+device/samsung/kyleve/prop/etc/permissions/secmediarecorder.xml:system/etc/permissions/secmediarecorder.xml \
+device/samsung/kyleve/prop/etc/permissions/sec_platform_library.xml:system/etc/permissions/sec_platform_library.xml \
+device/samsung/kyleve/prop/etc/permissions/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
+packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 # Device Device libs and Modules
 PRODUCT_COPY_FILES += \
@@ -110,6 +124,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleve/prop/etc/DiamondVoice_NB.txt:system/etc/DiamondVoice_NB.txt \
     device/samsung/kyleve/prop/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
     device/samsung/kyleve/prop/etc/gps.conf:system/etc/gps.conf \
+	device/samsung/kyleve/prop/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/samsung/kyleve/prop/etc/srm.bin:system/etc/srm.bin \
     device/samsung/kyleve/prop/etc/Volume.db:system/etc/Volume.db \
     device/samsung/kyleve/prop/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
@@ -161,14 +176,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleve/prop/lib/libISP.so:system/lib/libISP.so \
     device/samsung/kyleve/prop/lib/libjpeg_turbo.so:system/lib/libjpeg_turbo.so \
     device/samsung/kyleve/prop/lib/libnvaccessor.so:system/lib/libnvaccessor.so \
-    device/samsung/kyleve/prop/lib/libOMX.brcm.audio.aac.decoder.so:system/lib/libOMX.brcm.audio.aac.decoder.so \
-    device/samsung/kyleve/prop/lib/libOMX.brcm.audio.aac.encoder.so:system/lib/libOMX.brcm.audio.aac.encoder.so \
-    device/samsung/kyleve/prop/lib/libOMX.brcm.audio.amrnb.decoder.so:system/lib/libOMX.brcm.audio.amrnb.decoder.so \
-    device/samsung/kyleve/prop/lib/libOMX.brcm.audio.amrnb.encoder.so:system/lib/libOMX.brcm.audio.amrnb.encoder.so \
-    device/samsung/kyleve/prop/lib/libOMX.brcm.audio.amrwb.decoder.so:system/lib/libOMX.brcm.audio.amrwb.decoder.so \
-    device/samsung/kyleve/prop/lib/libOMX.brcm.audio.amrwb.encoder.so:system/lib/libOMX.brcm.audio.amrwb.encoder.so \
-    device/samsung/kyleve/prop/lib/libOMX.brcm.audio.mp3.decoder.so:system/lib/libOMX.brcm.audio.mp3.decoder.so \
-    device/samsung/kyleve/prop/lib/libOMX.brcm.audio.mp3.encoder.so:system/lib/libOMX.brcm.audio.mp3.encoder.so \
     device/samsung/kyleve/prop/lib/libps_dunmgr.so:system/lib/libps_dunmgr.so \
     device/samsung/kyleve/prop/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
     device/samsung/kyleve/prop/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
@@ -196,24 +203,26 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleve/prop/lib/libV3D_driver.so:system/lib/libV3D_driver.so \
     device/samsung/kyleve/prop/lib/libV3D_server.so:system/lib/libV3D_server.so \
     device/samsung/kyleve/prop/lib/libVCE_csl.so:system/lib/libVCE_csl.so \
-    device/samsung/kyleve/prop/lib/libVCE_driver.so:system/lib/libVCE_driver.so \
-    device/samsung/kyleve/prop/lib/libVCE_imageconv.so:system/lib/libVCE_imageconv.so \
-    device/samsung/kyleve/prop/lib/libVCOS.so:system/lib/libVCOS.so \
-    device/samsung/kyleve/prop/lib/libvtqinit.so:system/lib/libvtqinit.so \
-    device/samsung/kyleve/prop/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
-    device/samsung/kyleve/prop/lib/libwvm.so:system/lib/libwvm.so \
-    device/samsung/kyleve/prop/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
-    device/samsung/kyleve/prop/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
-    device/samsung/kyleve/prop/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
-    device/samsung/kyleve/prop/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
-    device/samsung/kyleve/prop/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
-    device/samsung/kyleve/prop/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
-    device/samsung/kyleve/prop/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
-    device/samsung/kyleve/prop/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
-    device/samsung/kyleve/prop/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
-    device/samsung/kyleve/prop/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
-    device/samsung/kyleve/prop/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
-    device/samsung/kyleve/prop/lib/hw/lights.hawaii.so:system/lib/hw/lights.hawaii.so
+	device/samsung/kyleve/prop/lib/libVCE_driver.so:system/lib/libVCE_driver.so \
+	device/samsung/kyleve/prop/lib/libVCE_imageconv.so:system/lib/libVCE_imageconv.so \
+	device/samsung/kyleve/prop/lib/libVCOS.so:system/lib/libVCOS.so \
+	device/samsung/kyleve/prop/lib/libvtqinit.so:system/lib/libvtqinit.so \
+	device/samsung/kyleve/prop/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
+	device/samsung/kyleve/prop/lib/libwvm.so:system/lib/libwvm.so \
+	device/samsung/kyleve/prop/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
+	device/samsung/kyleve/prop/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
+	device/samsung/kyleve/prop/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
+	device/samsung/kyleve/prop/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
+	device/samsung/kyleve/prop/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
+	device/samsung/kyleve/prop/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
+	device/samsung/kyleve/prop/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
+	device/samsung/kyleve/prop/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
+	device/samsung/kyleve/prop/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
+	device/samsung/kyleve/prop/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
+	device/samsung/kyleve/prop/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
+	device/samsung/kyleve/prop/lib/hw/lights.hawaii.so:system/lib/hw/lights.hawaii.so \
+	device/samsung/kyleve/prop/etc/tinyucm.conf:system/etc/tinyucm.conf \
+	device/samsung/kyleve/prop/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf
     
 
 # Device Device BINS
@@ -235,10 +244,12 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleve/prop/bin/gpslogd:system/bin/gpslogd \
     device/samsung/kyleve/prop/bin/immvibed:system/bin/immvibed \
 	device/samsung/kyleve/prop/bin/ndc:system/bin/ndc \
-    device/samsung/kyleve/prop/bin/vdc:system/bin/vdc \
+    device/samsung/kyleve/prop/bin/vdc:system/bin/vdc
     
 	
 PRODUCT_PROPERTY_OVERRIDES += \
+	ro.opengles.version=131072 \
+	hwui.render_dirty_regions=false \
 	ro.telephony.ril_class=SamsungBCMRIL \
 	persist.service.adb.enable=1 \
 	persist.service.debuggable=1 \
@@ -246,9 +257,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.zygote.disable_gl_preload=true \
 	rild.libpath=/system/lib/libbrcm_ril.so \
 	wifi.interface=wlan0 \
-	mobiledata.interfaces=rmnet0,pdp0,eth0,gprs,ppp0 \
+	mobiledata.interfaces=rmnet0,pdp0,wlan0,eth0,gprs,ppp0
 	
 PRODUCT_PACKAGES += \
+	libstagefrighthw \
+    libSEC_OMX_Resourcemanager \
+    libSEC_OMX_Core \
+    libOMX.SEC.AVC.Decoder \
+    libOMX.SEC.M4V.Decoder \
+    libOMX.SEC.WMV.Decoder \
+    libOMX.SEC.AVC.Encoder \
+    libOMX.SEC.M4V.Encoder \
 	e2fsck \
 	make_ext4fs \
     setup_fs \
@@ -263,12 +282,16 @@ PRODUCT_PACKAGES += \
 	LiveWallpapers \
 	LiveWallpapersPicker \
 	MagicSmokeWallpapers \
-	VisualizationWallpapers \
+	VisualizationWallpapers
+	
 
 # Device-specific packages
 PRODUCT_PACKAGES += \
-        SamsungServiceMode \
+SamsungServiceMode \
+libsecril-client \
+libsecril-client-sap
 
+	
 # Charger
 PRODUCT_PACKAGES += \
         charger \
