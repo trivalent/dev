@@ -124,7 +124,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/kyleve/prop/etc/DiamondVoice_NB.txt:system/etc/DiamondVoice_NB.txt \
     device/samsung/kyleve/prop/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
     device/samsung/kyleve/prop/etc/gps.conf:system/etc/gps.conf \
-	device/samsung/kyleve/prop/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/samsung/kyleve/prop/etc/srm.bin:system/etc/srm.bin \
     device/samsung/kyleve/prop/etc/Volume.db:system/etc/Volume.db \
     device/samsung/kyleve/prop/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
