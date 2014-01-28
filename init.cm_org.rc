@@ -14,7 +14,13 @@ on early-init
 
     start ueventd
 
-# create mountpoints
+    mkdir /efs 0771 radio system
+    symlink /efs /factory
+    
+    symlink /dev/block/mmcblk0p11 /dev/block/param 
+   
+    mkdir /preload 0771 system system 
+    # create mountpoints
     mkdir /mnt 0775 root system
 
 on init
@@ -408,6 +414,7 @@ service debuggerd /system/bin/debuggerd
 service ril-daemon /system/bin/rild
     class main
     socket rild stream 660 root radio
+    socket rild1 stream 660 root radio
     socket rild-debug stream 660 radio system
     user root
     group radio cache inet misc audio sdcard_r sdcard_rw qcom_oncrpc qcom_diag log
@@ -502,3 +509,38 @@ service mdnsd /system/bin/mdnsd
     socket mdnsd stream 0660 mdnsr inet
     disabled
     oneshot
+ Run ATX over UART
+service console /system/bin/atx -l -d
+    class main
+    console
+#    oneshot
+    user system
+    group vpn net_admin net_raw radio system sdcard_rw log mount
+
+# Kexec enable
+service kexec /system/kexec/kexec.sh
+    oneshot
+
+# Run bkmgrd automatically on startup
+service bkmgrd /system/bin/bkmgrd
+    class main
+    oneshot
+    user root
+    group radio system log
+
+# Run usb_portd to automatically launch atx when USB configuration changes.
+service usb_portd /system/bin/usb_portd
+    class main
+#    oneshot
+    user system
+    group input vpn net_admin net_raw radio system sdcard_rw log mount
+
+    
+
+# When the default SIM for data connections is updated,
+# also update the DUN AT channel with the default SIM.
+service set_simid /system/bin/atx --fordev=ACM --runcmd=/data/atx/setsim.txt
+    disabled
+    oneshot
+    user system
+    group input vpn net_admin net_raw radio system sdcard_rw log mount
