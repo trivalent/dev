@@ -116,6 +116,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/kyleve/prop/lib/libusb_config.so:system/lib/libusb_config.so \
 	device/samsung/kyleve/prop/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
 	device/samsung/kyleve/config/usb_portd.conf:system/etc/usb_portd.conf \
+	device/samsung/kyleve/config/vold.fstab:system/etc/vold.fstab \
 	device/samsung/kyleve/prop/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
 	device/samsung/kyleve/prop/etc/asound.conf:system/etc/asound.conf \
     device/samsung/kyleve/prop/etc/audio_policy.conf:system/etc/audio_policy.conf \

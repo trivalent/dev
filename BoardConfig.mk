@@ -24,7 +24,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
 
 # Indicate that the board has an Internal SD Card
-BOARD_HAS_SDCARD_INTERNAL := true
+#BOARD_HAS_SDCARD_INTERNAL := true
 
 
 # Allow to format EXT4 based systems
@@ -61,9 +61,9 @@ BOARD_EGL_WORKAROUND_BUG_10194508 := true
 #Audio and Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_USES_GENERIC_AUDIO := true
+#BOARD_USES_GENERIC_AUDIO := true
 #OPENSOURCE_ALSA_AUDIO := true
-#BOARD_USES_ALSA_AUDIO := true
+BOARD_USES_ALSA_AUDIO := true
 #BRCM_ALSA_LIB_DIR=device/samsung/bcm_common/alsa-lib
 
 # Recovery
@@ -71,7 +71,7 @@ TARGET_RECOVERY_FSTAB := device/samsung/kyleve/recovery.fstab
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
 # Audio
-#COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
+COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
 # Audio
 BOARD_USE_SAMSUNG_SEPARATEDSTREAM := true
 BOARD_USES_LIBMEDIA_WITH_AUDIOPARAMETER := true
