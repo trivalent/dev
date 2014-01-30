@@ -64,7 +64,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 #BOARD_USES_GENERIC_AUDIO := true
 #OPENSOURCE_ALSA_AUDIO := true
 BOARD_USES_ALSA_AUDIO := true
-#BRCM_ALSA_LIB_DIR=device/samsung/bcm_common/alsa-lib
+BRCM_ALSA_LIB_DIR=device/samsung/bcm_common/alsa-lib
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/kyleve/recovery.fstab
